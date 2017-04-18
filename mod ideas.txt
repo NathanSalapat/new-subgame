@@ -1,0 +1,18 @@
+Rather than having multiple mods that are all adding similar things, it makes sense to have single mods that have all the different things added into them.
+
+My idea for mods would be something along the lines of this.
+
+Animals: all the animals, monsters, tamable and not.
+Armor: basically just 3d_armor, but changed to be more realistic
+Soils: different types of soils for the different biomes.
+Farming: This would mostly just be an API
+Furniture: Things to beautify your house with.
+Food: This would include raw and cooked foods, and the yeilds of plants
+Hunger: hunger, thirst, and illnesses should all work together.
+Machines: Most machines should go here, really anything that has a formspec.
+Mobs: just the mob api.
+Ores: all the minerals that can be found in the ground
+Plants: All plants, trees, shrubs, veggies, grasses, etc. 
+Space: all the nodes needed for the spawn location building.
+Storage: Chests, bottles, cups, buckets, etc.
+Tools: All tools, weapons, etc.
