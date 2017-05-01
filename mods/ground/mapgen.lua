@@ -5,12 +5,12 @@ minetest.register_alias('mapgen_sand', 'ground:sand')
 minetest.register_alias('mapgen_water_source', 'ground:water_source')
 minetest.register_alias('mapgen_river_water_source', 'ground:water_source')
 minetest.register_alias('mapgen_lava_source', 'default:lava_source')
-minetest.register_alias('mapgen_gravel', 'default:gravel')
-minetest.register_alias('mapgen_desert_stone', 'default:desert_stone')
-minetest.register_alias('mapgen_desert_sand', 'default:desert_sand')
-minetest.register_alias('mapgen_dirt_with_snow', 'default:dirt_with_snow')
-minetest.register_alias('mapgen_snowblock', 'default:snowblock')
-minetest.register_alias('mapgen_snow', 'default:snow')
+minetest.register_alias('mapgen_gravel', 'ground:gravel')
+minetest.register_alias('mapgen_desert_stone', 'ground:desert_stone')
+minetest.register_alias('mapgen_desert_sand', 'ground:desert_sand')
+minetest.register_alias('mapgen_dirt_with_snow', 'ground:dirt_with_snow')
+minetest.register_alias('mapgen_snowblock', 'ground:snowblock')
+minetest.register_alias('mapgen_snow', 'ground:snow')
 minetest.register_alias('mapgen_ice', 'default:ice')
 minetest.register_alias('mapgen_sandstone', 'default:sandstone')
 
@@ -52,3 +52,43 @@ minetest.register_biome({
 		heat_point = 50,
 		humidity_point = 35,
 	})
+
+minetest.register_biome({
+      name = "grassland_dunes",
+      --node_dust = "",
+      node_top = "ground:sand",
+      depth_top = 1,
+      node_filler = "ground:sand",
+      depth_filler = 2,
+      --node_stone = "",
+      --node_water_top = "",
+      --depth_water_top = ,
+      --node_water = "",
+      --node_river_water = "",
+      node_riverbed = "ground:sand",
+      depth_riverbed = 2,
+      y_min = 5,
+      y_max = 5,
+      heat_point = 50,
+      humidity_point = 35,
+})
+
+minetest.register_biome({
+      name = "desert",
+      --node_dust = "",
+      node_top = "ground:desert_sand",
+      depth_top = 1,
+      node_filler = "ground:desert_sand",
+      depth_filler = 1,
+      node_stone = "ground:desert_stone",
+      --node_water_top = "",
+      --depth_water_top = ,
+      --node_water = "",
+      --node_river_water = "",
+      node_riverbed = "ground:sand",
+      depth_riverbed = 2,
+      y_min = 5,
+      y_max = 5,
+      heat_point = 92,
+      humidity_point = 16,
+})

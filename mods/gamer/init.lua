@@ -36,8 +36,8 @@ minetest.register_item(':', {
 		groupcaps = {
 			crumbly = {times={[2]=3.00, [3]=0.70}, uses=0, maxlevel=1},
 			snappy = {times={[3]=0.40}, uses=0, maxlevel=1},
-			oddly_breakable_by_hand = {times={[1]=3.50,[2]=2.00,[3]=0.70}, uses=0},
-         cracky = {times={[3]=0.40}, uses=0, maxlevel=1}
+			oddly_breakable_by_hand = {times={[1]=3.50,[2]=2.00,[3]=0.10}, uses=0},
+         cracky = {times={[3]=0.40, [4]=0.30,}, uses=0, maxlevel=2}
 		},
 		damage_groups = {fleshy=1},
 	}
