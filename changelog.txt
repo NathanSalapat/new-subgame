@@ -1,5 +1,9 @@
+2017-05-01:
+Added in flickering lights for the spawn location.
+Added license information for the mods.
+
 2017-04-30:
-Added in space ship nodes for the spawn location.
+Added in many space ship nodes for the spawn location.
 Added nodes relating the the iron metal.
 
 2017-04-19:

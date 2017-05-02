@@ -1,0 +1,29 @@
+Commands:
+
+Gamer:
+    Code
+      Originally by celeron55, Perttu Ahola <celeron55@gmail.com> (LGPL 2.1)
+      Various Minetest developers and contributors (LGPL 2.1)
+      With a few tweaks by Nathan Salapat (LGPL 2.1)
+   Media
+      gamer_model.b3d: MirceaKitsune (CC BY-SA 3.0)
+      gamer_skin.png: Jordach (CC BY-SA 3.0)
+      everything else: Nathan Salapat (CC BY-SA 3.0)
+
+Ground:
+   Code
+      Nathan Salapat (LGPL 2.1)
+   Media
+      Nathan Salapat (CC BY-SA 3.0)
+
+Metals:
+   Code
+      Nathan Salapat (LGPL 2.1)
+   Media
+      Nathan Salapat (CC BY-SA 3.0)
+
+Spawn:
+   Code
+      Nathan Salapat (LGPL 2.1)
+   Media
+      Nathan Salapat (CC BY-SA 3.0)
