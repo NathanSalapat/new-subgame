@@ -1,3 +1,7 @@
+2017-05-04:
+Added a few more nodes for spawn; ramps, wall blocks, widow edge.
+Animated the spawn:console tops.
+
 2017-05-01:
 Added in flickering lights for the spawn location.
 Added license information for the mods.

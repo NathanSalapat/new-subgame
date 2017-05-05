@@ -33,7 +33,13 @@ minetest.register_node('spawn:console1', {
    light_source = 2,
    selection_box = colbox_console,
    collision_box = colbox_console,
-   tiles = {'spawn_floor_blank.png', 'spawn_console_top1.png', 'spawn_console_front.png'},
+   tiles = {'spawn_floor_blank.png', {name = 'spawn_console_top1.png',
+      animation = {
+         type = 'vertical_frames',
+         aspect_w = 32,
+         aspect_h = 32,
+         length = 1.0,
+      },}, 'spawn_console_front.png'},
    groups = {oddly_breakable_by_hand=3}
 })
 
@@ -46,7 +52,13 @@ minetest.register_node('spawn:console2', {
    light_source = 3,
    selection_box = colbox_console,
    collision_box = colbox_console,
-   tiles = {'spawn_floor_blank.png', 'spawn_console_top2.png', 'spawn_console_front.png'},
+   tiles = {'spawn_floor_blank.png', {name = 'spawn_console_top2.png',
+      animation = {
+         type = 'vertical_frames',
+         aspect_w = 32,
+         aspect_h = 32,
+         length = 1.0,
+      },}, 'spawn_console_front.png'},
    groups = {oddly_breakable_by_hand=3}
 })
 
@@ -59,7 +71,13 @@ minetest.register_node('spawn:console3', {
    light_source = 2,
    selection_box = colbox_console,
    collision_box = colbox_console,
-   tiles = {'spawn_floor_blank.png', 'spawn_console_top3.png', 'spawn_console_front.png'},
+   tiles = {'spawn_floor_blank.png', {name = 'spawn_console_top3.png',
+      animation = {
+         type = 'vertical_frames',
+         aspect_w = 32,
+         aspect_h = 32,
+         length = 4.0,
+      },}, 'spawn_console_front.png'},
    groups = {oddly_breakable_by_hand=3}
 })
 

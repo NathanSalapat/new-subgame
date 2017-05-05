@@ -10,3 +10,4 @@ ship_parts_colors = { -- color_name, color:value, color code
 dofile(minetest.get_modpath('spawn')..'/floors.lua')
 dofile(minetest.get_modpath('spawn')..'/rails.lua')
 dofile(minetest.get_modpath('spawn')..'/objects.lua')
+dofile(minetest.get_modpath('spawn')..'/walls.lua')
