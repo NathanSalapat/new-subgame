@@ -1,3 +1,8 @@
+2017-05-06:
+Added more nodes to the spawn mod.
+Added vending machines.
+Added a temporary texture for the inventory GUI and tweaked some positions.
+
 2017-05-04:
 Added a few more nodes for spawn; ramps, wall blocks, widow edge.
 Animated the spawn:console tops.

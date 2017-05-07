@@ -2,29 +2,20 @@ gamer = {}
 
 -- GUI related stuff
 gamer.gui_bg = 'bgcolor[#080808BB;true]'
-gamer.gui_bg_img = 'background[5,5;1,1;gui_formbg.png;true]'
+gamer.gui_bg_img = 'background[5,5;1,1;gui_background.png;true]'
 gamer.gui_slots = 'listcolors[#00000069;#5A5A5A;#141318;#30434C;#FFF]'
 
-function gamer.get_hotbar_bg(x,y)
-	local out = ''
-	for i=0,7,1 do
-		out = out ..'image['..x+i..','..y..';1,1;gui_hb_bg.png]'
-	end
-	return out
-end
-
-gamer.gui_survival_form = 'size[8,8.5]'..
+gamer.gui_survival_form = 'size[8,7.5]'..
 			gamer.gui_bg..
 			gamer.gui_bg_img..
 			gamer.gui_slots..
-			'list[current_player;main;0,4.25;8,1;]'..
-			'list[current_player;main;0,5.5;8,3;8]'..
-			'list[current_player;craft;1.75,0.5;3,3;]'..
-			'list[current_player;craftpreview;5.75,1.5;1,1;]'..
-			'image[4.75,1.5;1,1;gui_furnace_arrow_bg.png^[transformR270]'..
+			'list[current_player;main;0,3.5;8,1;]'..
+			'list[current_player;main;0,4.5;8,3;8]'..
+			'list[current_player;craft;0,0;3,3;]'..
+			'list[current_player;craftpreview;4,1;1,1;]'..
+			'image[3,1;1,1;gui_furnace_arrow_bg.png^[transformR270]'..
 			'listring[current_player;main]'..
-			'listring[current_player;craft]'..
-			gamer.get_hotbar_bg(0,4.25)
+			'listring[current_player;craft]'
 
 minetest.register_item(':', {
 	type = 'none',
@@ -37,7 +28,8 @@ minetest.register_item(':', {
 			crumbly = {times={[2]=3.00, [3]=0.70}, uses=0, maxlevel=1},
 			snappy = {times={[3]=0.40}, uses=0, maxlevel=1},
 			oddly_breakable_by_hand = {times={[1]=3.50,[2]=2.00,[3]=0.10}, uses=0},
-         cracky = {times={[3]=0.40, [4]=0.30,}, uses=0, maxlevel=2}
+         cracky = {times={[3]=0.40, [4]=0.30,}, uses=0, maxlevel=2},
+         spawn = {times={[1]=.1,}, uses=0}
 		},
 		damage_groups = {fleshy=1},
 	}
