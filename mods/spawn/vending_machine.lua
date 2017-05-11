@@ -13,7 +13,7 @@ formspec_owner =
 
 minetest.register_node('spawn:vending1', {
 	description = 'Unconfigured Vending Machine',
-	tiles = {'autostore_top.png', 'autostore_side.png', 'autostore_side.png', 'autostore_side.png', 'autostore_side.png', 'autostore_off.png'},
+	tiles = {'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending_off.png'},
 	groups = {spawn=1},
 	paramtype = 'light',
 	paramtype2 = 'facedir',
@@ -67,7 +67,7 @@ minetest.register_node('spawn:vending1', {
 
 minetest.register_node('spawn:vending', {
 	description = 'Vending Machine',
-	tiles = {'autostore_top.png', 'autostore_side.png', 'autostore_side.png', 'autostore_side.png', 'autostore_side.png', 'autostore_front.png'},
+	tiles = {'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending_on.png'},
 	groups = {spawn=1},
 	paramtype = 'light',
 	paramtype2 = 'facedir',
@@ -95,7 +95,7 @@ minetest.register_node('spawn:vending', {
 
 minetest.register_node('spawn:vending_dud', {
 	description = 'Vending Machine',
-	tiles = {'autostore_top.png', 'autostore_side.png', 'autostore_side.png', 'autostore_side.png', 'autostore_side.png', 'autostore_off.png'},
+	tiles = {'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending_off.png'},
 	groups = {spawn=1},
 	paramtype = 'light',
 	paramtype2 = 'facedir',

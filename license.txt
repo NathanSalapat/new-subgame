@@ -22,6 +22,14 @@ Metals:
    Media
       Nathan Salapat (CC BY-SA 3.0)
 
+Screwdriver:
+    Code
+        GNU Lesser General Public License, version 2.1
+        Copyright (C) 2013-2016 RealBadAngel, Maciej Kasatkin
+        Copyright (C) 2013-2016 Various Minetest developers and contributors
+    Media
+        Gambit (CC BY-SA 3.0)
+
 Spawn:
    Code
       Nathan Salapat (LGPL 2.1)

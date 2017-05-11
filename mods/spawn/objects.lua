@@ -16,7 +16,7 @@ minetest.register_node('spawn:ladder', {
             {-.4, -.5, .3, .4, .5, .5},},
    },
    tiles = {'spawn_rail_blank.png', 'spawn_floor_blank.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 local colbox_console = {
@@ -38,9 +38,9 @@ minetest.register_node('spawn:console1', {
          type = 'vertical_frames',
          aspect_w = 32,
          aspect_h = 32,
-         length = 2.0,
+         length = 1.0,
       },}, 'spawn_console_front.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 minetest.register_node('spawn:console2', {
@@ -59,7 +59,7 @@ minetest.register_node('spawn:console2', {
          aspect_h = 32,
          length = 1.0,
       },}, 'spawn_console_front.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 minetest.register_node('spawn:console3', {
@@ -78,7 +78,7 @@ minetest.register_node('spawn:console3', {
          aspect_h = 32,
          length = 4.0,
       },}, 'spawn_console_front.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 local colbox_tube_light = {
@@ -96,7 +96,7 @@ minetest.register_node('spawn:tube_light', {
    selection_box = colbox_tube_light,
    collision_box = colbox_tube_light,
    tiles = {'spawn_tube_light.png'},
-   groups = {oddly_breakable_by_hand=3},
+   groups = {spawn=1},
    on_place = minetest.rotate_node,
    on_timer = function(pos)
       local node = minetest.get_node(pos)
@@ -117,7 +117,7 @@ minetest.register_node('spawn:tube_light_bad', {
    selection_box = colbox_tube_light,
    collision_box = colbox_tube_light,
    tiles = {'spawn_tube_light.png'},
-   groups = {oddly_breakable_by_hand=3},
+   groups = {spawn=1},
    on_place = minetest.rotate_node,
    on_construct = function(pos)
       local timer = minetest.get_node_timer(pos)

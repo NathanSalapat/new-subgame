@@ -54,7 +54,7 @@ minetest.register_node('spawn:floor', {
    selection_box = colbox_floor,
    collision_box = colbox_floor,
    tiles = {'spawn_floor_blank.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 minetest.register_node('spawn:ramp1', {
@@ -67,7 +67,7 @@ minetest.register_node('spawn:ramp1', {
    selection_box = colbox_ramp_1,
    collision_box = colbox_ramp_1,
    tiles = {'spawn_floor_blank.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 minetest.register_node('spawn:ramp2', {
@@ -80,7 +80,7 @@ minetest.register_node('spawn:ramp2', {
    selection_box = colbox_ramp_2,
    collision_box = colbox_ramp_2,
    tiles = {'spawn_floor_blank.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 minetest.register_node('spawn:stairs', {
@@ -92,7 +92,7 @@ minetest.register_node('spawn:stairs', {
    selection_box = colbox_ramp_2,
    collision_box = colbox_ramp_2,
    tiles = {'spawn_rail_blank.png', 'spawn_floor_blank.png'},
-   groups = {oddly_breakable_by_hand=3}
+   groups = {spawn=1}
 })
 
 for i in ipairs (ship_parts_colors) do
@@ -129,7 +129,7 @@ for i in ipairs (ship_parts_colors) do
          selection_box = colbox,
          collision_box = colbox,
          tiles = {'spawn_floor_blank.png^'..tex, 'spawn_floor_blank.png'},
-         groups = {oddly_breakable_by_hand=3}
+         groups = {spawn=1}
       })
    end
 end
