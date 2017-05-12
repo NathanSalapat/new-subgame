@@ -18,7 +18,7 @@ minetest.register_node('spawn:window_panel', {
    paramtype2 = "facedir",
 --   selection_box = colbox_floor,
 --   collision_box = colbox_floor,
-   tiles = {'black.png'},
+   tiles = {'spawn_stars1.png'},
    groups = {spawn=1}
 })
 
