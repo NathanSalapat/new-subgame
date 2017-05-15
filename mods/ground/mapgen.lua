@@ -47,8 +47,8 @@ minetest.register_biome({
 		--node_river_water = '',
 		node_riverbed = 'ground:sand',
 		depth_riverbed = 2,
-		y_min = 6,
-		y_max = 15,
+		y_min = 6, --lowest point possible for biome to exist.
+		y_max = 15, --highest point possible for biome to exist.
 		heat_point = 50,
 		humidity_point = 35,
 	})
@@ -67,10 +67,10 @@ minetest.register_biome({
       --node_river_water = "",
       node_riverbed = "ground:sand",
       depth_riverbed = 2,
-      y_min = 5,
+      y_min = 20,
       y_max = 5,
       heat_point = 50,
-      humidity_point = 35,
+      humidity_point = 45,
 })
 
 minetest.register_biome({
@@ -87,8 +87,37 @@ minetest.register_biome({
       --node_river_water = "",
       node_riverbed = "ground:sand",
       depth_riverbed = 2,
-      y_min = 5,
-      y_max = 5,
+      y_min = 30,
+      y_max = -10,
       heat_point = 92,
       humidity_point = 16,
+})
+
+minetest.register_biome({
+   name = 'snowy_tundra',
+   node_top = 'ground:dirt_with_snow',
+   depth_top = 1,
+   node_filler = 'ground:dirt',
+   depth_filler = 4,
+   node_stone = 'ground:desert_stone',
+   node_riverbed = 'ground:sand',
+   depth_riverbed = 1,
+   y_min = 12,
+   y_max = 60,
+   heat_point = 10,
+   humidity_point = 47,
+})
+
+minetest.register_biome({
+   name = 'beach',
+   node_top = 'ground:sand',
+   depth_top = 4,
+   node_filler = 'ground:gravel',
+   depth_filler = 10,
+   node_riverbed = 'ground:dirt',
+   depth_riverbed = 2,
+   y_min = -5,
+   y_max = 15,
+   heat_point = 65,
+   humidity_point = 70,
 })

@@ -90,7 +90,7 @@ function creative.register_tab(name, title, items)
 			return sfinv.make_formspec(player, context,
 				"label[6.2,3.35;" .. minetest.colorize("#FFFF00", tostring(pagenum)) .. " / " .. tostring(pagemax) .. "]" ..
 				[[
-					image[4.06,3.4;0.8,0.8;creative_trash_icon.png]
+					image[4,3.3;1,1;creative_trash_icon.png]
 					listcolors[#00000069;#5A5A5A;#141318;#30434C;#FFF]
 					list[current_player;main;0,4.7;8,1;]
 					list[current_player;main;0,5.85;8,3;8]
@@ -108,8 +108,8 @@ function creative.register_tab(name, title, items)
 				"field[0.3,3.5;2.2,1;creative_filter;;" .. minetest.formspec_escape(inv.filter) .. "]" ..
 				"listring[detached:creative_" .. player_name .. ";main]" ..
 				"list[detached:creative_" .. player_name .. ";main;0,0;8,3;" .. tostring(start_i) .. "]" ..
---				gamer.get_hotbar_bg(0,4.7) ..
-				gamer.gui_bg .. gamer.gui_bg_img .. gamer.gui_slots
+--				common.get_hotbar_bg(0,4.7) ..
+				common.gui_bg .. common.gui_bg_img .. common.gui_slots
 				.. creative.formspec_add, false)
 		end,
 		on_enter = function(self, player, context)

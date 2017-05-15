@@ -35,17 +35,17 @@ function sfinv.get_nav_fs(player, context, nav, current_idx)
 	end
 end
 
-local theme_main = "bgcolor[#080808BB;true]" .. gamer.gui_bg ..
-		gamer.gui_bg_img
+local theme_main = "bgcolor[#080808BB;true]" .. common.gui_bg ..
+		common.gui_bg_img
 
-local theme_inv = gamer.gui_slots .. [[
-		list[current_player;main;0,4.7;8,1;]
-		list[current_player;main;0,5.85;8,3;8]
+local theme_inv = common.gui_slots .. [[
+   list[current_player;main;0,3.5;8,1;]
+   list[current_player;main;0,4.5;8,3;8]
 	]]
 
 function sfinv.make_formspec(player, context, content, show_inv, size)
 	local tmp = {
-		size or "size[8,8.6]",
+		size or "size[8,7.5]",
 		theme_main,
 		sfinv.get_nav_fs(player, context, context.nav_titles, context.nav_idx),
 		content

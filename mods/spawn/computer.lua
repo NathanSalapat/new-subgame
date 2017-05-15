@@ -33,8 +33,9 @@ wall_computer_status =
 
 minetest.register_node('spawn:wall_computer', {
    description = 'Spaceship computer',
-   tiles = {'spawn_wall.png'},
+   tiles = {'spawn_wall.png', 'spawn_wall.png', 'spawn_wall.png', 'spawn_wall.png', 'spawn_wall.png',{name = 'spawn_wall.png^spawn_wall_computer.png', tileable_vertical = false}},
    groups = {spawn=1},
+   paramtype2 = 'facedir',
    on_construct = function(pos)
       local meta = minetest.get_meta(pos)
       meta:set_string('formspec', wall_computer_home)

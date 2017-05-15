@@ -1,5 +1,14 @@
+2017-05-14:
+Added the beach and snowy_tundra biomes.
+Moved a few colboxes and models to common mod.
+Added a corner rail to the spawn mod.
+Fixed the outside corner mesh in the spawn mod.
+Finally got around to creating a new player texture.
+Added the mymonths mod, stripped most of the features, leaving just the bare bones.
+
 2017-05-12:
 Added Creative and SFinv from Minetest_game.
+Created Common, which will house many common functions and bits of code.
 
 2017-05-11:
 Added Screwdriver mod from Minetest_game.

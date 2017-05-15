@@ -21,7 +21,7 @@ minetest.register_node('ground:gravel', {
 minetest.register_node('ground:dirt', {
 	description = 'Dirt',
 	tiles = {'ground_dirt.png'},
-	groups = {crumbly=3},
+	groups = {crumbly=3, soil=1},
 })
 
 minetest.register_node('ground:dirt_with_grass', {
@@ -51,21 +51,11 @@ minetest.register_node('ground:snowblock', {
 minetest.register_node('ground:snow', {
 	description = 'Snow',
    drawtype = 'mesh',
-	mesh = '2-10-slab.obj',
+	mesh = '1-5_slab.obj',
    paramtype = 'light',
 	paramtype2 = 'facedir',
-	selection_box = {
-		type = 'fixed',
-		fixed = {
-			{-0.5, -0.5, -0.5, 0.5, -0.3, 0.5},
-		}
-	},
-	collision_box = {
-		type = 'fixed',
-		fixed = {
-			{-0.5, -0.5, -0.5, 0.5, -0.3, 0.5},
-		}
-	},
+	selection_box = common.colbox_1_5_slab,
+	collision_box = common.colbox_1_5_slab,
 	tiles = {'ground_snow.png'},
 	groups = {crumbly=3, falling_node=1},
 })

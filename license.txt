@@ -3,6 +3,12 @@ Any mod listed here that has contributors other than myself should have a licens
 
 Commands:
 
+Common:
+   Code
+      Nathan Salapat (LGPL 2.1)
+   Media
+      Nathan Salapat (CC BY-SA 3.0)
+
 Creative:
    Code
       kilbith & celeron55 (MIT)
@@ -14,8 +20,6 @@ Gamer:
       With a few tweaks by Nathan Salapat (LGPL 2.1)
    Media
       gamer_model.b3d: MirceaKitsune (CC BY-SA 3.0)
-      gamer_skin.png: Jordach (CC BY-SA 3.0)
-      everything else: Nathan Salapat (CC BY-SA 3.0)
 
 Ground:
    Code

@@ -68,7 +68,7 @@ minetest.register_node('spawn:vending1', {
 minetest.register_node('spawn:vending', {
 	description = 'Vending Machine',
 	tiles = {'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending.png', 'spawn_vending_on.png'},
-	groups = {spawn=1},
+	groups = {spawn=1, not_in_creative_inventory=1},
 	paramtype = 'light',
 	paramtype2 = 'facedir',
 	drop = 'spawn:vending1',

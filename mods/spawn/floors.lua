@@ -28,14 +28,6 @@ local colbox_floor_angle = {
    }
 }
 
-local colbox_ramp_2 = {
-   type = 'fixed',
-   fixed = {
-      {-.5, -.5, -.5, .5, 0, .5},
-      {-.5, 0, 0, .5, .5, .5},
-   }
-}
-
 local colbox_ramp_1 = {
    type = 'fixed',
    fixed = {
@@ -77,8 +69,8 @@ minetest.register_node('spawn:ramp2', {
    paramtype = "light",
    paramtype2 = "facedir",
    light_source = 2,
-   selection_box = colbox_ramp_2,
-   collision_box = colbox_ramp_2,
+   selection_box = common.colbox_stair,
+   collision_box = common.colbox_stair,
    tiles = {'spawn_floor_blank.png'},
    groups = {spawn=1}
 })
@@ -89,8 +81,8 @@ minetest.register_node('spawn:stairs', {
    mesh = 'spawn_stairs.obj',
    paramtype = "light",
    paramtype2 = "facedir",
-   selection_box = colbox_ramp_2,
-   collision_box = colbox_ramp_2,
+   selection_box = common.colbox_stair,
+   collision_box = common.colbox_stair,
    tiles = {'spawn_rail_blank.png', 'spawn_floor_blank.png'},
    groups = {spawn=1}
 })

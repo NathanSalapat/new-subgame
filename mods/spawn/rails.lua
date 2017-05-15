@@ -27,6 +27,14 @@ local colbox_rail_double = {
    }
 }
 
+local colbox_rail_corner = {
+   type = 'fixed',
+   fixed = {
+      {.4, -.5, -.5, .5, .3, .5},
+      {-.5, -.5, .4, .5, .3, .5}
+   }
+}
+
 for i in ipairs (ship_parts_colors) do
 	local shipcol = ship_parts_colors[i][1]
    local shipval = ship_parts_colors[i][2]
@@ -35,7 +43,8 @@ for i in ipairs (ship_parts_colors) do
    local ship_rail = {  -- description, name, model, texture, colbox
       {shipcol..' Rail Angled', shipdesc..'ra', 'rail_angle', '(spawn_rail_overlay.png^['..shipval..')', colbox_rail_angle},
       {shipcol..' Rail Single', shipdesc..'rs', 'rail_single', '(spawn_rail_overlay.png^['..shipval..')', colbox_rail_single},
-      {shipcol..' Rail Double', shipdesc..'rd', 'rail_double', '(spawn_rail_overlay.png^['..shipval..')', colbox_rail_double}
+      {shipcol..' Rail Double', shipdesc..'rd', 'rail_double', '(spawn_rail_overlay.png^['..shipval..')', colbox_rail_double},
+      {shipcol..' Rail Corner', shipdesc..'rc', 'rail_corner', '(spawn_rail_overlay.png^['..shipval..')', colbox_rail_corner}
    }
 
    for i in ipairs (ship_rail) do
@@ -54,7 +63,7 @@ for i in ipairs (ship_parts_colors) do
          light_source = 4,
          selection_box = colbox,
          collision_box = colbox,
-         tiles = {'spawn_rail_blank.png^'..tex, 'spawn_floor_blank.png'},
+         tiles = {'spawn_rail_blank.png^'..tex},
          groups = {oddly_breakable_by_hand=3}
       })
    end

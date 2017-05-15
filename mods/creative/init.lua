@@ -32,6 +32,7 @@ if creative_mode_cache then
 				snappy  = caps,
 				choppy  = caps,
 				oddly_breakable_by_hand = caps,
+                spawn = caps,
 			},
 			damage_groups = {fleshy = 10},
 		}

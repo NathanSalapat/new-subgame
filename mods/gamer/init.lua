@@ -1,22 +1,5 @@
 gamer = {}
 
--- GUI related stuff
-gamer.gui_bg = 'bgcolor[#080808BB;true]'
-gamer.gui_bg_img = 'background[5,5;1,1;gui_background.png;true]'
-gamer.gui_slots = 'listcolors[#00000069;#5A5A5A;#141318;#30434C;#FFF]'
-
-gamer.gui_survival_form = 'size[8,7.5]'..
-			gamer.gui_bg..
-			gamer.gui_bg_img..
-			gamer.gui_slots..
-			'list[current_player;main;0,3.5;8,1;]'..
-			'list[current_player;main;0,4.5;8,3;8]'..
-			'list[current_player;craft;0,0;3,3;]'..
-			'list[current_player;craftpreview;4,1;1,1;]'..
-			'image[3,1;1,1;gui_furnace_arrow_bg.png^[transformR270]'..
-			'listring[current_player;main]'..
-			'listring[current_player;craft]'
-
 minetest.register_item(':', {
 	type = 'none',
 	wield_image = 'wieldhand.png',
@@ -127,7 +110,7 @@ minetest.register_on_joinplayer(function(player)
 
 	-- set GUI
 	if not minetest.setting_getbool('creative_mode') then
-		player:set_inventory_formspec(gamer.gui_survival_form)
+		player:set_inventory_formspec(common.gui_survival_form)
 	end
 	player:hud_set_hotbar_image('gui_hotbar.png')
 	player:hud_set_hotbar_selected_image('gui_hotbar_selected.png')

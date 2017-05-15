@@ -1,5 +1,8 @@
 --Privs
-
+minetest.register_privilege("msg", {
+	description = "private message players.",
+	give_to_singleplayer = false
+})
 
 --Commands
 minetest.register_chatcommand("msg", {
