@@ -64,7 +64,7 @@ for i in ipairs (ship_parts_colors) do
          selection_box = colbox,
          collision_box = colbox,
          tiles = {'spawn_rail_blank.png^'..tex},
-         groups = {oddly_breakable_by_hand=3}
+         groups = {oddly_breakable_by_hand=3,}
       })
    end
 end

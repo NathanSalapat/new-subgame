@@ -131,3 +131,67 @@ minetest.register_node('spawn:tube_light_bad', {
       timer:start(time)
    end,
 })
+
+minetest.register_node('spawn:dongle', {
+   description = 'remove before release',
+   drawtype = 'mesh',
+   mesh = 'dongle.obj',
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   tiles = {'dongle.png'},
+   groups = {spawn=1},
+   selection_box = {
+      type = 'fixed',
+         fixed = {
+            {-.5, -.5, -.1, .5, .5, .5},},
+   },
+})
+
+minetest.register_node('spawn:door_1', {
+   description = 'Open Door',
+   drawtype = 'mesh',
+   mesh = 'spawn_door_opened.obj',
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   tiles = {'spawn_door.png'},
+   groups = {spawn=1},
+   drop = 'spawn:door_0',
+   selection_box = {
+      type = 'fixed',
+         fixed = {
+            {-.5, -.5, -.1, -.4, 1.5, .1},},
+   },
+   collision_box = {
+      type = 'fixed',
+         fixed = {
+            {-.5, -.5, -.1, -.4, 1.5, .1},},
+   },
+   on_rightclick = function(pos)
+      local node = minetest.get_node(pos)
+      minetest.set_node(pos, {name = 'spawn:door_0', param2=node.param2})
+   end
+})
+
+minetest.register_node('spawn:door_0', {
+   description = 'Closed Door',
+   drawtype = 'mesh',
+   mesh = 'spawn_door_closed.obj',
+   paramtype = 'light',
+   paramtype2 = 'facedir',
+   tiles = {'spawn_door.png'},
+   groups = {spawn=1},
+   selection_box = {
+      type = 'fixed',
+         fixed = {
+            {-.5, -.5, -.1, .5, 1.5, .1},},
+   },
+   collision_box = {
+      type = 'fixed',
+         fixed = {
+            {-.5, -.5, -.1, .5, 1.5, .1},},
+   },
+   on_rightclick = function(pos)
+      local node = minetest.get_node(pos)
+      minetest.set_node(pos, {name = 'spawn:door_1', param2=node.param2})
+   end
+})

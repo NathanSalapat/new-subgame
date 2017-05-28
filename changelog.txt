@@ -1,3 +1,6 @@
+2017-05-27:
+Added in doors to the spawn mod. I have a feeling they are going to need lots more work.
+
 2017-05-14:
 Added the beach and snowy_tundra biomes.
 Moved a few colboxes and models to common mod.
