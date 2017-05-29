@@ -7,7 +7,7 @@ formspec_owner =
 	'list[context;cost;2,1;1,1;]'..
 	'field[3.3,1.4;1,1;costa;;1]'..
 	'field[5.3,0.4;3,1;sname;store name;Unconfigured Vending Machine]'..
-   'field[0.3,2.4;8,1;desc;item description;What this item is.]'..
+    'field[0.3,2.4;8,1;desc;item description;What this item is.]'..
 	'button_exit[5,1;3,1;save;Save Vending Machine]'..
 	'list[current_player;main;0,3;8,4;]'
 

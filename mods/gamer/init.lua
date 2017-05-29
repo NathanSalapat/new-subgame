@@ -104,6 +104,7 @@ end
 
 -- Update appearance when the player joins
 minetest.register_on_joinplayer(function(player)
+   player:get_inventory():set_size('main', 8*3)
 	gamer.player_attached[player:get_player_name()] = false
 	gamer.player_set_model(player, 'gamer_model.b3d')
 	player:set_local_animation({x=0, y=79}, {x=168, y=187}, {x=189, y=198}, {x=200, y=219}, 30)

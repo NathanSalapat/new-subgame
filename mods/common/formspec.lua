@@ -19,8 +19,7 @@ common.gui_survival_form = 'size[8,7.5]'..
 			common.gui_bg..
 			common.gui_bg_img..
 			common.gui_slots..
-			'list[current_player;main;0,3.5;8,1;]'..
-			'list[current_player;main;0,4.5;8,3;8]'..
+			'list[current_player;main;0,4;8,3;]'..
 			'list[current_player;craft;0,0;3,3;]'..
 			'list[current_player;craftpreview;4,1;1,1;]'..
 			'image[3,1;1,1;common_arrow.png'..

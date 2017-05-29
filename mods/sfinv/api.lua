@@ -39,13 +39,12 @@ local theme_main = "bgcolor[#080808BB;true]" .. common.gui_bg ..
 		common.gui_bg_img
 
 local theme_inv = common.gui_slots .. [[
-   list[current_player;main;0,3.5;8,1;]
-   list[current_player;main;0,4.5;8,3;8]
+   list[current_player;main;0,3.5;8,3;]
 	]]
 
 function sfinv.make_formspec(player, context, content, show_inv, size)
 	local tmp = {
-		size or "size[8,7.5]",
+		size or "size[8,6.25]",
 		theme_main,
 		sfinv.get_nav_fs(player, context, context.nav_titles, context.nav_idx),
 		content
