@@ -1,17 +1,45 @@
-function storage.wooden_chest_formspec(name)
-   local formspec =
+function storage.wooden_chest_formspec(pos, name)
+   local meta = minetest.get_meta(pos)
+   local existing_name = meta:get_string('infotext')
+   name = name or existing_name
+
+   local label = 'image[0,4;1,1;storage_label.png]'..
+   'field[1.3,4.3;2,1;description;;'..name..']'..
+   'button[3,4;1,1;save;Save]'
+
+   local sort = 'button[4,4;1,1;sort;Sort]'
+
+   local base =
 	'size[8,7.75]'..
 	common.gui_bg..
 	common.gui_bg_img..
 	common.gui_slots..
-	'list[current_name;main;1,0;6,3;]'..
-   'image[0,3;1,1;storage_label.png]'..
-   'field[1.3,3.3;2,1;description;;'..name..']'..
-   'button[3,3;1,1;save;Save]'..
-   'button[4,3;1,1;sort;Sort]'..
-	'list[current_player;main;0,4;8,3;]'..
+   'label[.5,.25;Upgrades]'..
+   'list[current_name;label_upgrade;2,0;1,1]'..
+   'list[current_name;sort_upgrade;3,0;1,1]'..
+	'list[current_name;main;1,1;6,3;]'..
+	'list[current_player;main;0,5;8,3;]'..
    'listring[]'
-   return formspec
+
+   local meta = minetest.get_meta(pos)
+   local upgrade_tier = tonumber(meta:get_string('upgrade'))
+   if upgrade_tier == 0 then
+      local formspec =
+      base
+      return formspec
+   elseif upgrade_tier == 1 then --Sorting
+      local formspec =
+      base..sort
+      return formspec
+   elseif upgrade_tier == 2 then --Labeling
+      local formspec =
+      base..label
+      return formspec
+   elseif upgrade_tier == 3 then --Sorting & Labeling
+      local formspec =
+      base..label..sort
+      return formspec
+   end
 end
 
 function storage.sort_inventory(inv)  -- Copied from the Technic_chests mod.
