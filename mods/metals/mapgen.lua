@@ -19,3 +19,28 @@ minetest.register_ore({
    y_min          = -31000,
    y_max          = -50,
 })
+
+minetest.register_ore({
+   ore_type       = 'stratum',
+   ore            = 'ground:dirt',
+   wherein        = 'ground:stone',
+   clust_scarcity = 1,
+   y_min          = 25,
+   y_max          = 30,
+   noise_params    = {
+      offset = 27,
+      scale = 4,
+      spread = {x = 100, y = 100, z = 100},
+      seed = 90122,
+      octaves = 3,
+      persist = 0.7
+   },
+   np_stratum_thickness = {
+      offset = 8,
+      scale = 4,
+      spread = {x = 100, y = 100, z = 100},
+      seed = 17,
+      octaves = 3,
+      persist = 0.7
+  },
+})
