@@ -16,7 +16,9 @@ minetest.register_node('plants:grass_1', {
       local stack = ItemStack('plants:grass_' .. math.random(1,4))
       local ret = minetest.item_place(stack, placer, pointed_thing)
       return ItemStack('plants:grass_1 '.. itemstack:get_count() - (1 - ret:get_count()))
-   end
+   end,
+   grows_in_month = 5,
+   grows_to = 'plants:grass_2',
 })
 
 minetest.register_node('plants:grass_2', {
@@ -31,6 +33,8 @@ minetest.register_node('plants:grass_2', {
    buildable_to = true,
    paramtype = 'light',
    selection_box = plants.grass_sel,
+   grows_in_month = 5,
+   grows_to = 'plants:grass_3',
 })
 
 minetest.register_node('plants:grass_3', {
@@ -45,6 +49,8 @@ minetest.register_node('plants:grass_3', {
    buildable_to = true,
    paramtype = 'light',
    selection_box = plants.grass_sel,
+   grows_in_month = 5,
+   grows_to = 'plants:grass_4',
 })
 
 minetest.register_node('plants:grass_4', {
@@ -59,4 +65,6 @@ minetest.register_node('plants:grass_4', {
    buildable_to = true,
    paramtype = 'light',
    selection_box = plants.grass_sel,
+   grows_to = 'spread',
+   grows_in_month = 5,
 })
