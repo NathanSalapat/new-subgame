@@ -29,7 +29,7 @@ minetest.register_node('ground:dirt_with_grass', {
 	tiles = {'ground_grass.png', 'ground_dirt.png',
 		{name = 'ground_dirt.png^ground_grass_overlay.png',
 			tileable_vertical = false}},
-	groups = {crumbly=3, soil=1, spreading_dirt_type=1},
+	groups = {crumbly=3, soil=1},
 	drop = 'ground:dirt',
 })
 
@@ -38,7 +38,7 @@ minetest.register_node('ground:dirt_with_snow', {
 	tiles = {'ground_snow.png', 'ground_dirt.png',
 		{name = 'ground_dirt.png^ground_snow_overlay.png',
 			tileable_vertical = false}},
-	groups = {crumbly=3, soil=1, spreading_dirt_type=1},
+	groups = {crumbly=3,},
 	drop = 'ground:dirt',
 })
 

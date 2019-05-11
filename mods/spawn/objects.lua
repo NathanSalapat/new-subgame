@@ -138,6 +138,7 @@ minetest.register_node('spawn:dongle', {
    mesh = 'dongle.obj',
    paramtype = 'light',
    paramtype2 = 'facedir',
+   sunlight_propagates = true,
    tiles = {'dongle.png'},
    groups = {spawn=1},
    selection_box = {

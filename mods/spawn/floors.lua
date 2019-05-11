@@ -98,9 +98,9 @@ for i in ipairs (ship_parts_colors) do
    {shipcol..' Walkway Edge', shipdesc..'es', 'edge_straight', '(spawn_ship_floor.png^['..shipval..')', colbox_floor_edge},
    {shipcol..' Floor Angle', shipdesc..'fa', 'floor_angle', '(spawn_ship_floor_angle.png^['..shipval..')', colbox_floor_angle},
    {shipcol..' Floor Square', shipdesc..'fs', 'floor_square', '(spawn_ship_floor_double.png^['..shipval..')', colbox_floor_square},
-   {shipcol..' Ramp Top Right', shipdesc..'r2r', 'ramp-2', '(spawn_ship_floor.png^['..shipval..')^[transform2', colbox_ramp_2},
+   {shipcol..' Ramp Top Right', shipdesc..'r2r', 'ramp-2', '(spawn_ship_floor.png^['..shipval..')^[transform2', common.colbox_stair},
    {shipcol..' Ramp Bottom Right', shipdesc..'r1r', 'ramp-1', '(spawn_ship_floor.png^['..shipval..')^[transform2', colbox_ramp_1},
-   {shipcol..' Ramp Top Left', shipdesc..'r2l', 'ramp-2', '(spawn_ship_floor.png^['..shipval..')', colbox_ramp_2},
+   {shipcol..' Ramp Top Left', shipdesc..'r2l', 'ramp-2', '(spawn_ship_floor.png^['..shipval..')', common.colbox_stair},
    {shipcol..' Ramp Bottom Left', shipdesc..'r1l', 'ramp-1', '(spawn_ship_floor.png^['..shipval..')', colbox_ramp_1}
    }
 

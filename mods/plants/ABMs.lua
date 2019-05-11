@@ -1,6 +1,6 @@
 minetest.register_abm{
 	nodenames = {'group:grass'},
-	interval = 2,
+	interval = 1,
 	chance = 2,
    action = function(pos)
       local month = mymonths.month_counter
@@ -12,7 +12,7 @@ minetest.register_abm{
          if thing_that_grows ~= 'spread' then
             minetest.set_node(pos, {name = thing_that_grows})
          elseif thing_that_grows == 'spread' then
-            common.plant_spread('plants:grass_4', pos, 2, 'ground:dirt_with_grass', 'air', 16)
+            common.plant_spread('plants:grass_1', 'plants:grass_4', pos, 2, 'ground:dirt_with_grass', 'air', 20)
          end
       end
    end,
